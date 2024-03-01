@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  background-image: url("colossus.gif");
+  
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.titulo__aplicacao {
+  padding: 5%;
+  font-family: "Sixtyfour", "sans-serif";
+  color: #660708;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px black, 0 0 25px #ace1af, 0 0 30px #ace1af; 
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ace1af;
+    background: rgba(44, 71, 44, 0.3);
+    padding: 10px;
+    border-radius: 1rem; 
+    gap: 5px;
+    margin: 50px;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size: x-large;
+    text-shadow: 1px 1px 2px black;
+    font-weight:bold;    
+    color:#ace1af;
+        
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.area_txt {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: column;
+  margin-right: 2%;
+
+}
+
+.image {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+}
+
+.area_result {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-direction: column;
+  margin-left: 2%;
+}
+
+.base {
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+  
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="titulo">
+    <h1 class="titulo__aplicacao">ENCRIPTADOR</h1>
+    </header>
+    <div class="intro">
+        <h2>
+        Instruções:
+        </h2>
+        <p> Insira um texto ou uma palavra no campo da esquerda. Em seguida escolha se irá criptografar ou descriptografar.</p>            
+        <p> Em seguida, basta copiar e colar novamente na área inicial.</p>
+    </div>
+
+    <main class="content">    
+        <div class="area_txt">
+            <textarea id="input_text" placeholder="Digite aqui o seu texto!" cols="40" rows="10"
+            ></textarea>
+            <button onclick="encryptor()" id="code_button">Codificar</button>
+            <button onclick="decryptor()" id="decode_button">Decodificar</button>
+        </div>
+
+        <div class="image">
+            <img src="./assets/enigma.jpg" width="350" height="200" alt="">
+        </div>
+
+        <div class="area_result">
+            <textarea id="text_out" placeholder="Seu texto irá aparecer aqui!" cols="40" rows="10"
+            ></textarea>
+            <button onclick="copy()" id="copy_button">Copiar!</button>
+        </div>
+    </main>
+    <footer class="base">
+        <h4>Desenvolvido por Osmar Company</h4>
+    </footer>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
