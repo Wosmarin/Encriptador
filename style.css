@@ -11,8 +11,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: 20px;
-  background-image: url("colossus.gif");
-  
+  background-image: url(./assets/colossus.gif);  
 }
 
 .titulo {
