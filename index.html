@@ -11,19 +11,24 @@
     <h1 class="titulo__aplicacao">ENCRIPTADOR</h1>
     </header>
     <div class="intro">
-        <h2>
+        <h2 style="color: #43aa8b;">
         Instruções:
         </h2>
-        <p> Insira um texto ou uma palavra no campo da esquerda. Em seguida escolha se irá criptografar ou descriptografar.</p>            
+        <p> Insira um texto ou uma palavra no campo da esquerda. Escolha se irá criptografar ou descriptografar.</p>            
         <p> Em seguida, basta copiar e colar novamente na área inicial.</p>
+        <span style="color:red;">
+             Atenção! 
+        </span>
+        <p style="color: brown;"> O Encriptador não aceita letras maiúsculas nem caracteres especiais.        
+        </p>
     </div>
 
     <main class="content">    
         <div class="area_txt">
-            <textarea id="input_text" placeholder="Digite aqui o seu texto!" cols="40" rows="10"
+            <textarea class="input" id="input_text" placeholder="Digite aqui o seu texto!" cols="40" rows="10" 
             ></textarea>
-            <button onclick="encryptor()" id="code_button">Codificar</button>
-            <button onclick="decryptor()" id="decode_button">Decodificar</button>
+            <button class="btn" onclick="encryptor()" id="code_button">Codificar</button>
+            <button class="btn" onclick="decryptor()" id="decode_button">Decodificar</button>
         </div>
 
         <div class="image">
@@ -31,9 +36,9 @@
         </div>
 
         <div class="area_result">
-            <textarea id="text_out" placeholder="Seu texto irá aparecer aqui!" cols="40" rows="10"
+            <textarea class="result" id="text_out" placeholder="Seu texto irá aparecer aqui!" cols="40" rows="10"
             ></textarea>
-            <button onclick="copy()" id="copy_button">Copiar!</button>
+            <button class="btn" onclick="copy()" id="copy_button">Copiar!</button>
         </div>
     </main>
     <footer class="base">

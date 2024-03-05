@@ -1,26 +1,27 @@
 const inputTextArea = document.getElementById("input_text");
 const resultTextArea = document.getElementById("text_out");
- 
+
+// o código abaixo especifica a restrição de letras maiúsculas e caracteres
 inputTextArea.addEventListener("keypress", function() {
 
-    const regex = new RegExp("^[a-z\]+$");
+    const regex = new RegExp((/^[a-z\s]+$/));
     var self = this;
         setTimeout( function(){
     
         var text = self.value;
-        
-        if(!regex.test(text)) {             
-            self.value = "";
-        }
-        
+
+        if(!regex.test(text)) {
+
+            self.value = " ";
+        }        
+    
     }, 10);
 });
-
 
 // função de codificação
 function encryptor() {
 
-    const enterText = inputTextArea.value.toLocaleLowerCase();
+    const enterText = inputTextArea.value;
 
     const resultText = enterText.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
 
@@ -32,7 +33,7 @@ function encryptor() {
 // função de decodificação
 function decryptor() {
 
-    const enterText = inputTextArea.value.toLocaleLowerCase();
+    const enterText = inputTextArea.value;
 
     const resultText = enterText.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u"); 
 
