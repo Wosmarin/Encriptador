@@ -132,6 +132,9 @@ body {
   
 }
 
+.response {
+  display: none;
+}
 
 @media(max-width: 1000px) {
 
@@ -139,22 +142,31 @@ body {
     font-size: 2rem;    
   }
 
+  .response {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
   .intro {
     font-size: medium;
-    margin: auto;
-    
-    
+    margin-bottom: 2rem;
+        
   }
   
 .content {
+    display: flex;
     min-height: 0;
     gap: 2rem;
     flex-direction: column;
     margin: auto;
 }
 
-.area_txt {
+.area_txt, .area_result{
   margin:auto
+
 }
 
 .base {
