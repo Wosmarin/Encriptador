@@ -9,4 +9,4 @@ JavaScript, CSS e HTML por meio de um codificador de texto.
 ![Logo Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Logo Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Logo Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)
-## [Clique aqui para testar!] (encriptador01.vercel.app)
+## [Clique para testar!](encriptador01.vercel.app)
